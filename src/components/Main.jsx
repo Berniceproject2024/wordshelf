@@ -7,7 +7,7 @@ const Main = () => {
     <>
     <section className='main'>
         <Nav/>
-        <div><img src='src/assets/bandb.jpg' alt="BandB" className='wallpaper-img'/></div>
+        <div><img src='/assets/bandb.jpg' alt="BandB" className='wallpaper-img'/></div>
      
     </section>
     

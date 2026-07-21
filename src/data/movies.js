@@ -6,7 +6,7 @@ const movies = [
     year: 2014,
     rating: 8.7,
     duration: "2h 49m",
-    poster: "src/assets/interstellar.webp",
+    poster: "/assets/interstellar.webp",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const movies = [
     year: 2008,
     rating: 9.0,
     duration: "2h 32m",
-    poster: "src/assets/darkknight.webp",
+    poster: "/assets/darkknight.webp",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const movies = [
     year: 2010,
     rating: 8.8,
     duration: "2h 28m",
-    poster: "src/assets/inception.webp",
+    poster: "/assets/inception.webp",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const movies = [
     year: 2006,
     rating: 8.5,
     duration: "2h 10m",
-    poster: "src/assets/prestige.webp",
+    poster: "/assets/prestige.webp",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const movies = [
     year: 2019,
     rating: 8.5,
     duration: "2h 12m",
-    poster: "src/assets/parasite.webp",
+    poster: "/assets/parasite.webp",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const movies = [
     year: 2014,
     rating: 8.5,
     duration: "1h 47m",
-    poster: "src/assets/whiplash.webp",
+    poster: "/assets/whiplash.webp",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const movies = [
     year: 2018,
     rating: 8.4,
     duration: "1h 57m",
-    poster: "src/assets/spiderverse.webp",
+    poster: "/assets/spiderverse.webp",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const movies = [
     year: 2021,
     rating: 8.0,
     duration: "2h 35m",
-    poster: "src/assets/dune.webp",
+    poster: "/assets/dune.webp",
   },
 ];
 

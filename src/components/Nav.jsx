@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <>
     <div className='nav'>
-        <div className='title'><img src='src/assets/moviebox.webp' alt='' className='moviebox-img'/>
+        <div className='title'><img src='/assets/moviebox.webp' alt='' className='moviebox-img'/>
          <h1>MOVIE BOX</h1>  </div>
          <div className='nav-list'>
             <p>HOME</p>

@@ -23,8 +23,7 @@ const WatchList = ({watchList, onRemoveMovie}) => {
             <h3>{movie.title}</h3>
             <span className='movie-item-span'>{movie.genre}</span>
             <span className='movie-item-span'> { movie.year}</span>
-            <p>Rating: {movie.rating}</p>
-            <span>{movie.durarion}</span>
+            <p>{movie.duration}</p>
         </div>
          <button className='remove-from-watchlist' onClick={() => onRemoveMovie(id)}>Remove from watchlist</button>
     </div>  
