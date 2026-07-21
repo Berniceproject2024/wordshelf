@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --primary: #e50914;
+  --accent: #f59e0b;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+h1, h2, h3, h4{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1.5px;
+}
+button{
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+     background: var(--primary);
+    color: white;
+}
+button:hover {
+    background: #c20812;
+}
+p, span{
+    font-size: 14px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    gap: 30px;
+    justify-content: space-around;
+    width: 100vw;
+    padding-right: 40px;
+
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.nav h1{
+    font-size: 40px;
+    color: rgb(179, 9, 4);
+}
+.nav img{
+    width: 80px;
+    height: 45px;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.nav-list p{
+    border: 1px solid rgb(184, 124, 34);
+    padding: 4px;
+    color: white;
+    cursor: pointer;
+}
+.select-option{
+    display: flex;
+    gap: 10px;
+}
+.select-option button{
+    border: none;
+    background: var(--primary);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+select{
+    background-color: transparent;
+    color: rgb(173, 29, 29);
+    border: 1px solid rgb(214, 209, 200);
+    cursor: pointer;
+}
+.wallpaper-img{
+    width: 99vw;
+    height: 80vh;
+   
+}
+.movie-list{
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    gap: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+.movie-section-h2{
+    color: #F5C518;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 25px 0 15px 30px;
+    
+}
+.movie-section-h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #E50914;
+    margin-top: 6px;
+    border-radius: 10px;
+}
+
+.movie-card{
+    border: 1px solid #334155;
+     background: var(--card);
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    line-height: 0.6;
+}
+.movie-card img{
+    width: 220px;
+    height: 280px;
+}
+.movie-card button{
+    height: 30px;
+}
+.movie-card span{
+    margin-right: 10px;
+}
+.hero-section{
+    display: flex;
+}
+.watch-list {
+    background: #18233d;
+    color: white;
+    width: 380px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+.watch-list h2 {
+    color: #f5c518;
+    margin-top: 0;
+}
+.watch-list img{
+    max-width: 140px; 
+    height: 70px;
+}
+.movie-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    line-height: 0.6;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+.movie-item-span{
+    padding-bottom: -10px;
+}
+.movie-item button{
+    margin-bottom: 40px;
+}
+.hero-section{
+    padding-right: 20px;
+}
+
