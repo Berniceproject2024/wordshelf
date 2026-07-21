@@ -6,10 +6,10 @@ const WatchList = ({watchList, onRemoveMovie}) => {
   return (
     <div className='watch-list'>
       { watchList.length === 0? 
-      (<div>
+      (<div className="empty-watchlist">
         <h2>WatchList(0)</h2>
-        <p>Your watchlist is empty.</p>
-        <p>Start adding movies</p>
+        <p>Your watch list is empty</p>
+        <p>Add movies from the collection to get started.</p>
         </div>)
         :
         (<div>
