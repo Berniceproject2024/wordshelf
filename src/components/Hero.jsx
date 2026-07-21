@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import MovieList from './MovieList';
 import WatchList from './WatchList';
-import Main from './main';
+import Main from './Main';
 
 const Hero = () => {
   const [watchList, setWatchList] = useState([])
