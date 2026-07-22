@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import { about, author, bookcatalogue, categories, home } from '../data/routes';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     const [language, setLanguage] = useState()
@@ -7,14 +9,14 @@ const Nav = () => {
   return (
     <>
     <div className='nav'>
-        <div className='title'><img src='/assets/moviebox.webp' alt='' className='moviebox-img'/>
-         <h1>MOVIE BOX</h1>  </div>
+        <div className='title'><img src='/assets/bread.webp' alt='' className='moviebox-img'/>
+         <h1>FAITH SHELF</h1>  </div>
          <div className='nav-list'>
-            <p>HOME</p>
-            <p>MOVIE</p>
-            <p>TV SHOW</p>
-            <p>WEB SERIES</p>
-            <p>PREMIUM</p>
+            <Link to={home}><p>HOME</p></Link>
+           <Link to={bookcatalogue}><p>BOOKS</p></Link>
+            <Link to={categories}><p>CATEGORIES</p></Link>
+            <Link to={author}><p>AUTHORS</p></Link>
+            <Link to={about}><p>ABOUT</p></Link>
          </div>
          <div className='select-option'>
              <select

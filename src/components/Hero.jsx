@@ -1,34 +1,40 @@
 import React, { useState } from 'react';
-import MovieList from './MovieList';
-import WatchList from './WatchList';
+import BookList from './BookList';
+import ReadList from './ReadList';
 import Main from './Main';
+import books from '../data/books';
+import Footer from './Footer';
 
 const Hero = () => {
-  const [watchList, setWatchList] = useState([])
+  const [readList, setReadList] = useState([])
 
-  function addMovie(movie){
-    setWatchList(prevWatchList => {
-    const existingItem = watchList.some 
-    (item => item.id === movie.id)
+  function addBook(book){
+    setReadList(prevReadList => {
+    const existingItem = readList.some 
+    (item => item.id === book.id)
 
     if(existingItem) {
-      return prevWatchList;
+      return prevReadList;
     }
-    return [...prevWatchList, movie];
+    return [...prevReadList, book];
 }
 )
     }
   
-  const removeMovie = (deleteIndex) =>{
-    setWatchList(prevWatchList => prevWatchList.filter((movie, index) => index !== deleteIndex))
+  const removeBook = (deleteIndex) =>{
+    setReadList(prevReadList => prevReadList.filter((book, index) => index !== deleteIndex))
   }
   return (
     <>
-    <Main/>
+    <div className='page-container'>
+      <Main/>
     <div className='hero-section'>
-      <MovieList watchList={watchList} onAddMovie={addMovie} onRemoveMovie={removeMovie}/>
-      <WatchList watchList={watchList} onAddMovie={addMovie} onRemoveMovie={removeMovie}/>
+      <BookList bookList={books} readList={readList} onAddBook={addBook} onRemoveBook={removeBook}/>
+      <ReadList readList={readList} onAddBook={addBook} onRemoveBook={removeBook}/>
     </div>
+    <Footer/>
+    </div>
+    
     </>
   );
 }

@@ -1,0 +1,6 @@
+export const home = '/'
+export const bookcatalogue = '/bookcatalogue'
+export const categories = '/categories'
+export const author = '/author'
+export const about = '/about'
+export const signin = '/signin'
