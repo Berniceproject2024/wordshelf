@@ -482,14 +482,31 @@ select{
 }
    .nav{
     position:relative;
-    height:70px;
+    height:60px;
+    align-items:center;
+    padding:0 15px;
     justify-content:space-between;
 }
 
     .nav h1{
+        margin: 0;
         font-size:28px;
+        color: var(--primary);
     }
-
+    .book-section-h2{
+        font-size: 20px;
+    
+    }
+    .book-section-h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    text-align: center;
+    background:var(--accent);
+    margin-top: 6px;
+    border-radius: 10px;
+}
     .nav img{
         width:55px;
         height:auto;
@@ -513,22 +530,16 @@ select{
     display:flex;
 }
 
-/* .select-option{
-    display:none;
-} */
     .nav-list p{
         margin:0;
-        padding:5px 8px;
+        padding:8px 12px;
         font-size:13px;
     }
 
     .page-container{
-        padding-top:70px;
+        padding-top:25px;
     }
 
-.page-container{
-    padding-top:170px;
-}
 .hero-section{
     flex-direction:column;
     align-items:center;
